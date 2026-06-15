@@ -63,3 +63,63 @@ Primeira parte do texto sobre computação.
 Segunda parte do texto, que agora aparece em uma nova linha.
 </p>
 <p class="artigo-fonte">Fonte: The National Museum of Computing</p>
+:root {
+/* Nossas variáveis de cor ficarão aqui dentro */
+}
+:root {
+    --cor-primaria: #183C63;
+    --cor-secundaria: #3782d2;
+    --cor-fundo: #ffffff;
+    --cor-texto: #151428;
+    --cor-contraste: #f3eef7;
+    --cor-botao: #f9f9f9;
+}
+header {
+    background-color: var(--cor-primaria);
+}
+
+main {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+    <!-- No arquivo index.html -->
+    <body class="tema-escuro">
+    /* No arquivo style.css */
+    .tema-escuro {
+    --cor-primaria: #c9e3ff; /* Um azul mais claro para destacar no fundo escuro */
+    --cor-fundo: #151428;    /* Fundo escuro */
+    --cor-texto: #ffffff;   /* Texto branco */
+    /* Continue invertendo as cores conforme o seu layout */
+}
+.tema-escuro a {
+
+}
+.tema-escuro a {
+    color: var(--cor-secundaria);
+}
+.tema-escuro p {
+
+}
+.tema-escuro p {
+    color: var(--cor-texto);
+}
+.tema-escuro header p {
+
+}
+.tema-escuro header p {
+    color: var(--cor-contraste);
+}
+--fonte-texto:
+body {
+    max-width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    max-width: 100vw;
+    font-family: 'Segoe UI', sans-serif;
+}
+body {
+    max-width: 100vw;
+    font-family: var(--fonte-texto);
+}
+--fonte-texto: 'Segoe UI', sans-serif;
